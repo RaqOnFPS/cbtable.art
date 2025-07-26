@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CB Table Rentals</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background: #4b0082;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #c084fc;
+      border-bottom: 2px solid #c084fc;
+      padding-bottom: 0.5rem;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: #1a1a1a;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      border-left: 5px solid #c084fc;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea, select {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 0.8rem;
+      background: #c084fc;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a855f7;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Folding_table.jpg/800px-Folding_table.jpg" alt="6ft Party Table Logo" class="logo" />
+    <h1>CB Table Rentals</h1>
+    <p>Party in style with CB Table Rentals</p>
+  </header>
+
+  <section class="services">
+    <h2>Services & Pricing</h2>
+    <ul>
+      <li>Table Rental: <strong>$6 per table per day</strong></li>
+      <li>Delivery Fee: <strong>$20</strong></li>
+      <li>Reservation Fee (Non-refundable): <strong>$20</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Service Area</h2>
+    <p>We proudly serve <strong>Grand Rapids, Michigan</strong> and surrounding areas.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:6162641594" style="color:#c084fc;">616-264-1594</a></p>
+    <p><strong>Email:</strong> <a href="mailto:charlesbacon0528@gmail.com" style="color:#c084fc;">charlesbacon0528@gmail.com</a></p>
+  </section>
+
+  <section>
+    <h2>Request a Quote</h2>
+    <form action="https://formspree.io/f/mvgqaqqp" method="POST">
+  <input type="hidden" name="_redirect" value="thank-you.html" />
+
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <input type="tel" name="Phone" placeholder="Your Phone Number" />
+      <input type="text" name="Location" placeholder="Delivery Location (City/Zip)" />
+      <textarea name="Details" placeholder="How many tables? Date? Special requests?" rows="4"></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Leave a Review</h2>
+    <form action="https://formspree.io/f/mvgqaqqp" method="POST">
+  <input type="hidden" name="_redirect" value="thank-you.html" />
+
+      <input type="text" name="Reviewer Name" placeholder="Your Name" required />
+      <select name="Rating" required>
+        <option value="">Rating (1-5 Stars)</option>
+        <option value="⭐️">⭐️</option>
+        <option value="⭐️⭐️">⭐️⭐️</option>
+        <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
+        <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
+        <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
+      </select>
+      <textarea name="Review" placeholder="Write your review here..." rows="4" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 CB Table Rentals. All rights reserved.
+  </footer>
+</body>
+</html>
